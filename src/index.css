@@ -1,0 +1,97 @@
+@import "tailwindcss";
+@import "tailwindcss";
+
+:root {
+  --color-primarybg: #04040c;
+  --font-primary: "Montserrat";
+  --color-primarytext: #BC61FF;
+  --seconde-text: #F0F0F0;
+}
+
+@theme {
+  --color-primarybg: #04040c;
+  --font-primary: "Montserrat";
+  --color-primarytext: #BC61FF;
+  --seconde-text: #F0F0F0;
+  --breakpoint-MYxl:1920px;
+}
+
+.bg-primary {
+  background-color: var(--color-primarybg);
+}
+
+.font-primary {
+  font-family: var(--font-primary);
+
+}
+
+.seconde-text {
+  color: var(--seconde-text);
+}
+
+
+
+.hover\:text-primary:hover {
+  color: var(--color-primarytext);
+}
+
+.slick-slide {
+  padding: 0 25px;
+}
+
+.slick-dots .slick-active div {
+  background-color: #D9D8E2
+}
+
+@layer utilities {
+  .btnlinear {
+    border: 5px solid transparent;
+
+
+    background: rgb(188, 97, 243);
+    background: linear-gradient(0deg, rgba(188, 97, 243, 1) 0%,
+        rgba(92, 67, 246, 1) 100%);
+    background-origin: border-box;
+    background-clip: border-box;
+  }
+
+  .borderelement {
+    border: 5px solid transparent;
+    border-image: linear-gradient(0deg, rgba(188, 97, 243, 1) 0%,
+        rgba(92, 67, 246, 1) 100%);
+    border-image-slice: 1;
+    /* padding: 20px; */
+    /* Inner spacing */
+
+  }
+
+  .hedintxtcl {
+    background-image: url(../src/assets/text-bg.png);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+
+  }
+
+}
+
+@layer components {
+  .navItem {
+    @apply text-[#F0F0F0] text-xl relative
+  }
+
+  .ActiveNavItem {
+    @apply after:content-[''] after:w-full after:h-1 after:absolute after:-bottom-4 after:left-0 after:bg-[#3A3653] after:rounded-2xl hover:after:w-full text-xl
+  }
+}
+
+@layer base {
+
+  html,
+  body {
+    background-color: var(--color-primarybg);
+    color: var(--seconde-text);
+    font-family: var(--font-primary);
+  }
+}
