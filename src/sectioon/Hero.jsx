@@ -8,9 +8,12 @@ const Hero = () => {
     <section className="xl:py-14 relative z-50 p-2 MYxl:p-0">
       <Container>
         <Flex className="items-center flex-col lg:flex-row gap-5 ">
+<<<<<<< HEAD
 
 
           
+=======
+>>>>>>> 92e7a9f74dbfc24c48856dabb787a603b9b18e15
           <div className="max-w-[800px] order-1 lg:order-0 gap-4">
             <h1 className=" xl:text-8xl text-white text-center text-4xl  font-black  tracking-wider lg:text-left md:text-7xl lg:text-5xl ">
               Best NFTs Marketplace.
