@@ -13,7 +13,7 @@ const Hero = () => {
           
           <div className="max-w-[800px] order-1 lg:order-0 gap-4">
             <h1 className=" xl:text-8xl text-white text-center text-4xl  font-black  tracking-wider lg:text-left md:text-7xl lg:text-5xl ">
-              Best NFTs Marketplace...
+              Best NFTs Marketplace.
             </h1>
             <p className="text-xl mt-8 mb-10 xl:mb-16  seconde-text max-w-[765px] leading-8 tracking-tight text-center lg:text-left">
               Ultrices eget pretium sit euismod mi id. In commodo auctor eget
