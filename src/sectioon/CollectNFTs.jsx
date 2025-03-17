@@ -25,12 +25,28 @@ const CollectNFTs = () => {
        
       </div>
     ),
+    responsive:[
+      {
+        breakpoint: 1920,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   };
 
   return (
-    <section className="z-50 relative ">
+    <section className="z-50 relative px-2 MYxl:p-0">
       <Container>
-        <Flex className="flex-col  items-center text-center">
+        <Flex className="flex-col  items-center text-center sm:text-center">
           <Title title={"Collect some NFTs"} />
         </Flex>
         <SliderComponent className="mt-16" settings={settings}>

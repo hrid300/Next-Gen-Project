@@ -31,14 +31,14 @@ const BrandImg = [
 ];
 const BrandLogo = () => {
   return (
-    <section className="py-44 relative ">
+    <section className="py-44 relative px-2 MYxl:p-0">
         <img
             src={BgImage}
             alt= ""
             className="absolute -top-[980px] left-0 "
         />
       <Container>
-        <Flex className={`${BrandImg.length > 5 && "flex-wrap"} gap-28 `}>
+        <Flex className={`${BrandImg.length > 5 && "flex-wrap"} gap-28  flex-row xl:flex-nowrap flex-wrap justify-center items-center`}>
           {BrandImg.map(({ img, alt }) => (
             <div key={alt}>
               <img src={img} alt={alt} />
